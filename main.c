@@ -79,7 +79,7 @@ void receiver(const char* frames[], const size_t N) {
 }
 
 int main() {
-  srand(time(NULL));
+  srand((unsigned int)time(NULL));
   const char* frames[] = {"Hello", "World", "This", "Is", "A", "Test"};
 
   // Simulate sender
